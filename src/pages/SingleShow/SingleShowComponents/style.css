@@ -1,0 +1,137 @@
+.cast_card {
+    position: relative;
+    width: 180px;
+}
+
+.cast_img {
+    width: 180px;
+}
+
+.cast_img img {
+    width: 100%;
+    border-radius: 20px;
+    z-index: 1;
+
+}
+
+.cast_card_content {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    width: 100%;
+    background: rgba(22, 22, 22, 0.5);
+    border-radius: 16px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+}
+
+.cast_card_content p {
+    color: white;
+    line-height: 5px;
+}
+
+/* ////SideData */
+.side_card_component {
+    padding: 20px;
+}
+
+.side_card_component p {
+    font-size: 15px;
+    line-height: 12px;
+}
+
+.side_card_component .side_data_title {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* ///networkTvjs */
+.network_logo {
+    width: 100px;
+}
+
+/* /// season.js  */
+.season_component {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.season_component .sc_left {
+    width: 250px;
+    padding: 20px;
+}
+.sc_left img{
+    width: 100%;
+    border-radius: 20px;
+}
+.sc_right{
+    padding: 20px;
+}
+.sc_right h2{
+font-weight: bold;
+}
+.sc_right ._flex{
+    height: 35px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+/* //video  */
+
+.iframe{
+    width: 100%;
+    height: 600px;
+}
+
+@media screen and (max-width:600px) {
+    .show_cast_with_sidedata {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+    .cast_img {
+        width: 150px;
+    }
+    .cast_card{
+        width: 150px;
+    }
+    .cast_card_content p{
+        line-height: 14px;
+        margin-bottom: 8px;
+    }
+    .side_details_single_container{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .side_details_single_container p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .iframe{
+        height: 250px;
+    }
+    .season_component{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .season_component .sc_left {
+        width: 200px;
+    }
+}
